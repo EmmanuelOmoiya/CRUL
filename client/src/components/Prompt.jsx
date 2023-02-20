@@ -18,7 +18,7 @@ const Prompt = ({
   React.useState(()=>{
     const interval = setInterval(()=>{
       setIsNumber((prev)=> prev+1);
-    }, 5000);
+    }, 10000);
     return () => clearInterval(interval)
   }, [])
   return (
