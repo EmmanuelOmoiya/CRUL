@@ -114,7 +114,7 @@ const LandingPage = () => {
               We've got everything that you need !
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto font-poppins">
-              Create imaginative and visually stunning images through DALL-E AI
+              Create imaginative and visually stunning images through CRUL
               and share them with the community
             </p>
           </div>

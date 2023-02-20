@@ -63,13 +63,13 @@ export const features = [
   {
     name: "Search Futionality",
     description:
-      "We have added a search fild in the showcase page for users to search for any already generated image by the name or prompt.",
+      "We have added a search field in the showcase page for users to search for any already generated image by the name or prompt.",
     icon: "FiSearch"
   },
   {
     name: "Showcase your AI Image",
     description:
-      "In all sincerity, everyone would like to see people appreciate their work. With DALL-E AI, you can create one of the best AI Images.",
+      "In all sincerity, everyone would like to see people appreciate their work. With CRUL, you can create one of the best AI Images.",
     icon: "HiOutlineDesktopComputer" 
   },
   {
