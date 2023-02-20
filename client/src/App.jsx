@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AppLayout from "./layout/AppLayout";
 import { Showcase, GenerateImage } from "./pages";
-import { LandingPage, Image } from "./pages";
+import { LandingPage, Image , NotFound} from "./pages";
 
 const App = () => {
   return (
@@ -13,6 +13,7 @@ const App = () => {
           <Route path="/create-image" element={<GenerateImage />} />
           <Route path="/" element={<LandingPage />} />
           <Route path="/showcase/:id" element={<Image />} />
+          <Route path="*" element={<NotFound /> }/>
         </Routes>
       </AppLayout>
     </BrowserRouter>
