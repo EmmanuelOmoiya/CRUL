@@ -39,7 +39,7 @@ const Card = ({ _id, name, prompt, photo }) => {
               <button
                 className="outline-none px-4 bg-transparent border-none"
                 type="button"
-                onClick={() => downloadImage(_id, photo)}
+                onClick={() => downloadImage(_id, name, photo)}
               >
                 <BsDownload
                   title="download"

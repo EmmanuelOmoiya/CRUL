@@ -158,7 +158,7 @@ const Image = () => {
               )}
               <button
                 className="border flex justify-center items-center text-center py-2 px-4 border-green hover:bg-[rgba(255,255,255,0.12)] text-green font-poppins rounded-md sm:w-auto w-full"
-                onClick={() => downloadImage(id, image.photo)}
+                onClick={() => downloadImage(id, image.name, image.photo)}
               >
                 <span className="mr-2">
                   {" "}

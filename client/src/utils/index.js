@@ -8,6 +8,6 @@ export const getRandomPrompt = (prompt) => {
   return randomPrompt;
 };
 
-export const downloadImage = async (_id, photo) => {
-  FileSaver.saveAs(photo, `download-${_id}.jpg`);
+export const downloadImage = async (_id, name, photo) => {
+  FileSaver.saveAs(photo, `${name}-${_id}-(CRUL-https://crul.vercel.app).jpg`);
 };
