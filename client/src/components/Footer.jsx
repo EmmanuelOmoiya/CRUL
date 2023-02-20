@@ -25,7 +25,7 @@ const Footer = () => {
           <FiInstagram />
         </Link>
         <Link
-          to="https://linkedin.com/emmanuelomoiya"
+          to="https://linkedin.com/in/emmanuelomoiya"
           className="mx-4 text-light_slate hover:text-green"
         >
           <FiLinkedin />
