@@ -59,7 +59,7 @@ const Image = () => {
         />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="Generate AI Image using CRUL" />
-        <title>{`${image.name}'s AI Image`} - CRUL</title>
+        <title>{image.name ? `${image.name}'s AI Image` : "Showcase"} - CRUL</title>
         <meta name="theme-color" content="#0a192f" />
         {/* <link rel="shortcut icon" href={faviconHref} sizes="any" /> */}
         <link rel="manifest" href="../../public/manifest.json" />
