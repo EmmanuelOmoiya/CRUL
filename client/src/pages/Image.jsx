@@ -82,7 +82,7 @@ const Image = () => {
         <meta property="og:site_name" content="CRUL" />
         <meta
           property="og:url"
-          content={`https://localhost:3000/showcase/${id}`}
+          content={`https://crul.vercel.app/showcase/${id}`}
           key="ogurl"
         />
         <meta property="og:image" content={OG} />
@@ -145,7 +145,7 @@ const Image = () => {
                   onClick={() =>
                     shareImage(
                       `${image.name} created this image using CRUL`,
-                      `http://localhost:3000/showcase/${id}`
+                      `https://crul.vercel.app/showcase/${id}`
                     )
                   }
                   className="text-navy flex justify-center items-center text-center py-3 px-6  bg-green_opaque text-[1.15rem] font-poppins rounded-md sm:w-auto w-full"
