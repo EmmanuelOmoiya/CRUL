@@ -11,7 +11,7 @@ const Header = () => {
     <header className="w-full sm:relative fixed flex bg-navy justify-between items-center text-lightest_slate sm:px-20 px-6 py-7 ">
       <Link to="/">
         {/* <img src={logo} alt="logo" className="w-28 outline-none object-contain"/> */}
-        <p className="font-bold font-sora text-[19px] flex">
+        <p className="font-bold font-sora text-[19px] flex" >
           <img src={logo} alt="crul" className="mx-1"/>
           CRUL</p>
       </Link>
@@ -22,29 +22,30 @@ const Header = () => {
           to="/"
           className=" text-lightest_slate hover:text-green mx-5 font-poppins"
         >
-         <p> Home</p>
+         <p onClick={()=>toggle()}> Home</p>
         </Link>
         <Link
           to="/#features"
           className="text-lightest_slate hover:text-green mx-5 font-poppins"
         >
-          <p>Features</p>
+          <p onClick={()=>toggle()}>Features</p>
         </Link>
         <Link
           to="/showcase"
           className=" text-lightest_slate hover:text-green mx-5 font-poppins "
         >
-          <p>Showcase</p>
+          <p onClick={()=>toggle()}>Showcase</p>
         </Link>
         <Link
           to="/#faqs"
           className=" text-lightest_slate hover:text-green mx-5 font-poppins"
         >
-          <p>FAQ</p>
+          <p onClick={()=>toggle()}>FAQ</p>
         </Link>
         <p><Link
           to="/create-image"
           className=" border mx-2 border-green bg-transparent py-2.5 px-4 font-medium rounded-md text-green text-[13px] font-poppins hover:bg-[rgba(255,255,255,0.12)]"
+          onClick={()=>toggle()}
         >
           Create
         </Link></p>
