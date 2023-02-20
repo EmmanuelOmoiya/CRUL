@@ -8,7 +8,7 @@ const Header = () => {
     isOpen(!open);
   }
   return (
-    <header className="w-full sm:relative fixed flex bg-navy justify-between items-center text-lightest_slate sm:px-20 px-6 py-7 ">
+    <header className="w-full sm:relative z-20 fixed flex bg-navy justify-between items-center text-lightest_slate sm:px-20 px-6 py-7 ">
       <Link to="/">
         {/* <img src={logo} alt="logo" className="w-28 outline-none object-contain"/> */}
         <p className="font-bold font-sora text-[19px] flex" >
