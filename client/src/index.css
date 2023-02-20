@@ -29,17 +29,17 @@
 
 @font-face {
   font-family: "Sora";
-  src: url("./assets/fonts/Sora-VariableFont_wght.ttf");
+  src: url("/assets/fonts/Sora-VariableFont_wght.ttf");
 }
 
 @font-face {
   font-family: "Source Sans Pro";
-  src: url("./assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+  src: url("/assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
 }
 
 @font-face {
   font-family: "Poppins";
-  src: url("./assets/fonts/poppins/Poppins-Regular.ttf");
+  src: url("/assets/fonts/poppins/Poppins-Regular.ttf");
 }
 
 @media screen and (min-width: 480px) {

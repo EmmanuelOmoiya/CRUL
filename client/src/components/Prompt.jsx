@@ -1,5 +1,5 @@
 import React from "react";
-import { artificialIntelligence, robotics, firmware } from "../assets";
+import { artificialIntelligence, robotics, firmware } from "../../public/assets";
 
 const Prompt = ({
   prompt,

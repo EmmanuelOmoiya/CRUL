@@ -1,5 +1,5 @@
 import React from "react";
-import { visionaryTechnology } from "../assets";
+import { visionaryTechnology } from "../../public/assets";
 import { features } from "../constants";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
@@ -10,7 +10,7 @@ import { BsLightningChargeFill } from "react-icons/bs";
 import { FaRobot } from 'react-icons/fa'
 import _ from 'lodash';
 
-import OG from '../assets/img/CRUL_OG.png';
+import OG from '/assets/img/CRUL_OG.png';
 
 const LandingPage = () => {
   const getIconComponent =(name) => {
@@ -45,9 +45,8 @@ const LandingPage = () => {
         <meta name="description" content="Generate AI Image using CRUL" />
         <title>Home - CRUL</title>
         <meta name="theme-color" content="#0a192f" />
-        {/* <link rel="shortcut icon" href={faviconHref} sizes="any" /> */}
-        <link rel="manifest" href="../../public/manifest.json" />
-        <link rel="apple-touch-icon" href="/icons/icon-192x192.png"></link>
+        <link rel="shortcut icon" href='/favicon.ico' sizes="any" />
+        <link rel="manifest" href="/manifest.json" />
         <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
         <meta name="author" content="Emmanuel Omoiya"></meta>
         <meta name="robots" content="index,follow" />
@@ -63,8 +62,8 @@ const LandingPage = () => {
           content="Generate AI Image using CRUL"
         />
         <meta property="og:site_name" content="Home - CRUL" />
-        {/* <meta property="og:url" content={currentURL} key="ogurl" /> */}
-                <meta property="og:image" content={OG} />
+        <meta property="og:url" content="https://crul.vercel.app" key="ogurl" />
+                <meta property="og:image" content={`https://crul.vercel.app/assets/img/CRUL_OG.png`} />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -75,8 +74,8 @@ const LandingPage = () => {
           content="Generate AI Image using CRUL"
         />
         <meta name="twitter:image" content={OG} />
-        <meta name="twitter:image:alt" content="CRUL"></meta>
-        {/* <meta name="twitter:domain" content={currentURL} /> */}
+        <meta name="twitter:image:alt" content={`https://crul.vercel.app/assets/img/CRUL_OG.png`}></meta>
+        <meta name="twitter:domain" content="https://crul.vercel.app" />
       </Helmet>
       <section className="w-full flex flex-col md:flex-row py-6 md:py-12 min-h-[70vh] items-center relative sm:px-20 px-6 font-poppins ">
         <div className="flex flex-col w-full md:w-6/12 relative">

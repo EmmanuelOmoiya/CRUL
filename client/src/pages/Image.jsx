@@ -5,7 +5,7 @@ import { Loader } from "../components";
 import { FiDownload } from "react-icons/fi";
 import { AiOutlineShareAlt } from "react-icons/ai";
 import { Helmet } from "react-helmet";
-import OG from '../assets/img/CRUL_OG.png';
+import OG from '/assets/img/CRUL_OG.png';
 
 
 const Image = () => {

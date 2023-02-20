@@ -1,7 +1,7 @@
 import React from 'react';
 import { Loader, Card, FormField } from '../components';
 import { Helmet } from 'react-helmet';
-import OG from '../assets/img/CRUL_SHOWCASE_OG.png';
+import OG from '/assets/img/CRUL_SHOWCASE_OG.png';
 const RenderCards = ({ data, title }) => {
     if(data?.length > 0) return data.map((post)=> <Card key={post._id} {...post} /> )
     return(

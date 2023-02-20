@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { getRandomPrompt } from "../utils";
 import { Name, Prompt, Detail, Toast } from "../components";
 import { Helmet } from "react-helmet";
-import OG from '../assets/img/CRUL_CREATE_OG.png';
+import OG from '../../public/assets/img/CRUL_CREATE_OG.png';
 
 
 const GenerateImage = () => {
