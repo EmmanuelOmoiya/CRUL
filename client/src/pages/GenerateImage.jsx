@@ -21,7 +21,7 @@ const GenerateImage = () => {
     if (prompt && photo) {
       setLoading(true);
       try {
-        const response = await fetch("hhttps://crul.onrender.com/api/v1/post", {
+        const response = await fetch("https://crul.onrender.com/api/v1/post", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
