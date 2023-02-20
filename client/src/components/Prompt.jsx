@@ -8,6 +8,19 @@ const Prompt = ({
   generateImage,
   generatingImg,
 }) => {
+  const [isNumber, setIsNumber] = React.useState(0);
+  const text = [
+    'Generating Image',
+    'Give it a min, it should be done',
+    'Hmmm, chill a bit',
+    'wait for it'
+  ]
+  React.useState(()=>{
+    const interval = setInterval(()=>{
+      setIsNumber((prev)=> prev+1);
+    }, 5000);
+    return () => clearInterval(interval)
+  }, [])
   return (
     <div className="w-full flex flex-col md:flex-row py-6 md:py-12 min-h-[70vh] items-center relative sm:px-20 px-6">
       <div className="flex w-full mt-16 md:mt-0 md:w-6/12 justify-center">
@@ -33,7 +46,7 @@ const Prompt = ({
               onChange={(e) => setPrompt(e.target.value)}
             />
             {generatingImg ? (
-              <p className="font-poppins mt-2">Generating image...</p>
+              <p className="font-poppins mt-2">{text[number]}</p>
             ) : (
               <button
                 type="button"
