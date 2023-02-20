@@ -9,11 +9,11 @@ const App = () => {
     <BrowserRouter>
       <AppLayout>
         <Routes>
-          <Route path="/showcase" element={<Showcase />} />
-          <Route path="/create-image" element={<GenerateImage />} />
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/showcase/:id" element={<Image />} />
           <Route path="*" element={<NotFound /> }/>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/create-image" element={<GenerateImage />} />
+          <Route path="/showcase" element={<Showcase />} />
+          <Route path="/showcase/:id" element={<Image />} />
         </Routes>
       </AppLayout>
     </BrowserRouter>

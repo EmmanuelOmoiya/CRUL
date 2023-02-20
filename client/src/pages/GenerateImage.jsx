@@ -69,6 +69,28 @@ const GenerateImage = () => {
     }
   };
 
+  // const [jokes, setJokes] = React.useState([]);
+  // React.useEffect(()=>{
+  //   const generateJokes = async () => {
+  //       try {
+  //         const response = await fetch("https://localhost:4090/api/v1/dalle/jokes", {
+  //           method: "POST",
+  //           headers: {
+  //             "Content-Type": "application/json",
+  //           },
+  //           body: JSON.stringify({ prompt: "Generate an array of jokes" }),
+  //         });
+  //         const data = await response.json();
+  //         console.log(data)
+  //         setJokes(data.jokes);
+  //       } catch (error) {
+  //         alert(error);
+  //         console.log(error);
+  //       }
+  //   };
+  //   generateJokes();
+  // }, [])
+
   return (
     <>
       <Helmet>

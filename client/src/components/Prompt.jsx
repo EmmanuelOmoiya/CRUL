@@ -8,28 +8,6 @@ const Prompt = ({
   generateImage,
   generatingImg,
 }) => {
-  const [jokes, setJokes] = React.useState([]);
-  React.useEffect(()=>{
-    const generateJokes = async () => {
-        try {
-          const response = await fetch("https://localhost:4090/api/v1/dalle/jokes", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify({ prompt: "Generate an array of jokes" }),
-          });
-          const data = await response.json();
-          console.log(data)
-          setJokes(data.jokes);
-        } catch (error) {
-          alert(error);
-          console.log(error);
-        }
-    };
-    generateJokes();
-  }, [])
-
   return (
     <div className="w-full flex flex-col md:flex-row py-6 md:py-12 min-h-[70vh] items-center relative sm:px-20 px-6">
       <div className="flex w-full mt-16 md:mt-0 md:w-6/12 justify-center">
@@ -100,7 +78,7 @@ const Prompt = ({
         <p className="font-poppins text-slate text-[1.25rem] font-medium text-2xl">
           Create imaginative and visually stunning images
         </p>
-        <p className="mt-4 border border-green p-4 rounded-md">Do you know why tomatoes are red and not purple? Because they always ause the purrr in the sentence</p>
+        {/* <p className="mt-4 border border-green p-4 rounded-md">Do you know why tomatoes are red and not purple? Because they always ause the purrr in the sentence</p> */}
       </div>
     </div>
   );
