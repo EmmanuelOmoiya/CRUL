@@ -15,7 +15,7 @@ app.use("/api/v1/post", PostRoutes);
 app.use("/api/v1/dalle", DalleRoutes);
 
 app.get('/',(req, res)=>{
-  res.send('Welcome to CRUL API, Visit /api/v1/dalle for better use')
+  res.send('Welcome to CRUL API, Visit /api/v1/dalle for better use');
 })
 
 // Start server
@@ -23,7 +23,7 @@ const startServer = async () => {
   try {
     connectDB(process.env.MONGODB_URL);
     app.listen(4090, () =>
-      console.log("Server has started on http://localhost:4090")
+      console.log("Server has started on https://crul.onrender.com")
     );
   } catch (err) {
     console.log(err);
