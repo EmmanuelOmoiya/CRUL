@@ -18,7 +18,7 @@ const Showcasw = () => {
         const fetchAllPosts = async () => {
             setLoading(true);
             try{
-                const response = await fetch('http://localhost:4090/api/v1/post',{
+                const response = await fetch('https://crul.onrender.com/api/v1/post',{
                     method: 'GET',
                     headers: {
                         'Content-Type': 'application/json',

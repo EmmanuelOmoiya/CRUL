@@ -18,7 +18,7 @@ const Image = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `http://localhost:4090/api/v1/post/${id}`,
+          `https://crul.onrender.com/api/v1/post/${id}`,
           {
             method: "GET",
             headers: {
