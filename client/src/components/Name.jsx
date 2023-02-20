@@ -2,6 +2,12 @@ import React from "react";
 import { artificialIntelligence, robotics, firmware } from "../../public/assets";
 
 const Name = ({ name, setName, setNumber }) => {
+  const change = () =>{
+    if(name !== '') {
+      setNumber(2)
+    } else {
+      alert("Please enter a name to continue");    }
+  }
   return (
     <div className="w-full flex flex-col md:flex-row py-6 md:py-12 min-h-[70vh] items-center relative sm:px-20 px-6">
       <div className="flex flex-col w-full md:w-6/12 relative">
@@ -18,7 +24,7 @@ const Name = ({ name, setName, setNumber }) => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            <button onClick={() => setNumber(2)}>
+            <button onClick={() => change()}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-12 cursor-pointer transition-all mt-4 sm:mt-0 hover:ml-1 duration-200 ease-linear"
