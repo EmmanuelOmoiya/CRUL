@@ -24,7 +24,7 @@ const Name = ({ name, setName, setNumber }) => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            <button onClick={() => change()}>
+            <button type="button" onClick={() => change()}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-12 cursor-pointer transition-all mt-4 sm:mt-0 hover:ml-1 duration-200 ease-linear"

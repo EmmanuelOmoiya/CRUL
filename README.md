@@ -1,6 +1,6 @@
 # CRUL
 
-**Description**:  This is an AI Image Generator that uses OpenAi's DALL-E and Chat-GP3. It generates an image out of the provided prompt. This is a game-changing software, it uses chat-gpt3 to suggest prompts for you.
+**Description**:  This is an AI Image Generator that uses OpenAi's DALL-E and text-davincii-3. It generates an image out of the provided prompt. This is a game-changing software, it uses text-davincii-3 to suggest prompts for you.
 
 ## Demo
 https://user-images.githubusercontent.com/79797604/219990531-af5d3224-30c3-40d9-84c1-bc5b28ca022e.mp4

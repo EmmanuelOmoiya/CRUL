@@ -75,17 +75,17 @@ const Showcasw = () => {
                 <meta property="og:title" content="ShowcasE - CRUL" />
                 <meta property="og:description" content="Generate AI Image using CRUL"/>
                 <meta property="og:site_name" content="CRUL" />
-                {/* <meta property="og:url" content={currentURL} key="ogurl" /> */}
-                <meta property="og:image" content={OG} />
+                <meta property="og:url" content="https://crul.vercel.app/" key="ogurl" />
+                <meta property="og:image" content="https://crul.vercel.app/assets/img/CRUL_SHOWCASE_OG.png" />
 
                 {/* Twitter */}
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:creator" content="@Emmanuel_Omoiya" />
                 <meta name="twitter:title" content="Showcase - CRUL" />
                 <meta name="twitter:description" content="Generate AI Image using CRUL" />
-                <meta name="twitter:image" content={OG} />
+                <meta name="twitter:image" content="https://crul.vercel.app/assets/img/CRUL_SHOWCASE_OG.png" />
                 <meta name="twitter:image:alt" content="CRUL"></meta>
-                {/* <meta name="twitter:domain" content={currentURL} /> */}
+                <meta name="twitter:domain" content="https://crul.vercel.app/" />
             </Helmet>
             <div>
                 <h1 className="font-extrabold text-light_slate text-[32px] font-poppins">The Community Showcase</h1>

@@ -122,7 +122,7 @@ const GenerateImage = () => {
         />
         <meta property="og:site_name" content="CRUL" />
         {/* <meta property="og:url" content={currentURL} key="ogurl" /> */}
-                <meta property="og:image" content={OG} />
+                <meta property="og:image" content='https://crul.vercel.app/assets/img/CRUL_CREATE_OG.png' />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -132,9 +132,9 @@ const GenerateImage = () => {
           name="twitter:description"
           content="Generate AI Image using CRUL"
         />
-        <meta name="twitter:image" content={OG} />
-        <meta name="twitter:image:alt" content="CRUL"></meta>
-        {/* <meta name="twitter:domain" content={currentURL} /> */}
+        <meta name="twitter:image" content="https://crul.vercel.app/assets/img/CRUL_CREATE_OG.png" />
+        <meta name="twitter:image:alt" content="Generate Image - CRUL"></meta>
+        <meta name="twitter:domain" content="https://crul.vercel.app/" />
       </Helmet>
       {number === 1 && (
         <Name name={name} setName={setName} setNumber={setNumber} />

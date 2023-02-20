@@ -10,10 +10,10 @@ const Prompt = ({
 }) => {
   const [isNumber, setIsNumber] = React.useState(0);
   const text = [
-    'Generating Image',
+    'Generating Image...',
     'Give it a min, it should be done',
     'Hmmm, chill a bit',
-    'wait for it'
+    'Wait for it'
   ]
   React.useState(()=>{
     const interval = setInterval(()=>{
