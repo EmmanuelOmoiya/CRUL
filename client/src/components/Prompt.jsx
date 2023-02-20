@@ -8,6 +8,10 @@ const Prompt = ({
   generateImage,
   generatingImg,
 }) => {
+  // const [jokes, setJokes] = React.useState([]);
+  // const generateJokes = async() =>{
+    
+  // }
   return (
     <div className="w-full flex flex-col md:flex-row py-6 md:py-12 min-h-[70vh] items-center relative sm:px-20 px-6">
       <div className="flex w-full mt-16 md:mt-0 md:w-6/12 justify-center">

@@ -90,7 +90,7 @@ const LandingPage = () => {
           </p>
           <Link
             to="/create-image"
-            className="border border-green bg-transparent sm:w-[35%] w-auto py-2.5 mt-8 px-4 font-medium rounded-md text-green text-[1.1rem] font-poppins hover:bg-[rgba(255,255,255,0.12)]"
+            className="border border-green bg-transparent w-[10.6rem] py-2.5 mt-8 px-4 font-medium rounded-md text-green text-[1.1rem] font-poppins hover:bg-[rgba(255,255,255,0.12)]"
           >
             <p className="w-auto">Generate Image</p>
           </Link>
