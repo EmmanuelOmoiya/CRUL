@@ -1,9 +1,9 @@
 # CRUL
 
-**Description**:  This is an AI Image Generator that uses OpenAi's DALL-E and Chat-GP3. It generates an image out of the provided prompt. This is a game-changing software, it uses chat-gpt3 to suggest prompts for you
+**Description**:  This is an AI Image Generator that uses OpenAi's DALL-E and Chat-GP3. It generates an image out of the provided prompt. This is a game-changing software, it uses chat-gpt3 to suggest prompts for you.
 
 ## Demo
-![Demo](https://asset.cloudinary.com/dukwkk7ti/5f5ec86a21e3542928688ec652037784)
+https://user-images.githubusercontent.com/79797604/219990531-af5d3224-30c3-40d9-84c1-bc5b28ca022e.mp4
 
 ## Technology stack 
  - Javascript Library: [ReactJs](https://beta.reactjs.org)
