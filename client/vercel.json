@@ -1,0 +1,8 @@
+{ "rewrites": 
+    [
+        { "source": "/(.*)", "destination": "/" },
+        { "source": "/", "destination": "/" },
+        { "source": "/creat-image", "destination": "/create-image" },
+        { "source": "/showcase", "destination": "/showcase" }
+    ]
+}

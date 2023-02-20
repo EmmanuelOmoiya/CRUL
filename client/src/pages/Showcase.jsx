@@ -17,6 +17,7 @@ const Showcasw = () => {
     React.useEffect(()=>{
         const fetchAllPosts = async () => {
             setLoading(true);
+                console.log('has started')
             try{
                 const response = await fetch('https://crul.onrender.com/api/v1/post',{
                     method: 'GET',
@@ -27,12 +28,15 @@ const Showcasw = () => {
                 if(response.ok){
                     const result = await response.json();
                     setAllPosts(result.data.reverse());
+                console.log('returned')
+
                 }
             } catch(Error){
                 alert(Error);
                 console.log(Error)
             } finally{
                 setLoading(false);
+                console.log('is done')
             }
         }
         fetchAllPosts();

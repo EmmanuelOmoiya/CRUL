@@ -7,7 +7,6 @@ import { AiOutlineShareAlt } from "react-icons/ai";
 import { Helmet } from "react-helmet";
 import OG from '/assets/img/CRUL_OG.png';
 
-
 const Image = () => {
   const { id } = useParams();
   const [image, setImage] = React.useState({});

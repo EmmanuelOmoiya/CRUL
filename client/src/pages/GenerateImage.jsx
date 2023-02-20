@@ -48,7 +48,7 @@ const GenerateImage = () => {
     if (prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch("https://crul.onrender.com/api/v1/dalle", {
+        const response = await fetch("https://crul.onrender.com/api/v1/crul", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -73,7 +73,7 @@ const GenerateImage = () => {
   // React.useEffect(()=>{
   //   const generateJokes = async () => {
   //       try {
-  //         const response = await fetch("https://localhost:4090/api/v1/dalle/jokes", {
+  //         const response = await fetch("https://localhost:4090/api/v1/crul/jokes", {
   //           method: "POST",
   //           headers: {
   //             "Content-Type": "application/json",
