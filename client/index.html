@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/crul.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="manifest" href="./public/manifest.json" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <title>CRUL</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="../src/main.jsx"></script>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./serviceWorker.js")
+            .then((registration) => {
+              console.log(
+                "Service Worker registration sucessful with scope: ",
+                registration.scope
+              );
+            })
+            .catch((err) => {
+              console.log("Service Worker registration failed: ", err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>

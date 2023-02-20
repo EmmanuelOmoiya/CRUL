@@ -1,0 +1,15 @@
+{
+    "name": "CRUL",
+    "short_name": "CRUL",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background-color": "#0a192f",
+    "theme-color": "#0a192f",
+    "icons": [
+        {
+            "src": "",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
