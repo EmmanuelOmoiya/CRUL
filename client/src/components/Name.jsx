@@ -2,7 +2,8 @@ import React from "react";
 import { artificialIntelligence, robotics, firmware } from "../../public/assets";
 
 const Name = ({ name, setName, setNumber }) => {
-  const change = () =>{
+  const change = (e) =>{
+    e.preventDefault();
     if(name !== '') {
       setNumber(2)
     } else {
@@ -15,7 +16,7 @@ const Name = ({ name, setName, setNumber }) => {
           What is your name?
         </p>
         <div className="flex flex-col sm:flex-row mt-8 md:mt-16 mb-8 2xl:my-20 items-center">
-          <form className="w-full">
+          <form className="w-full" onSubmit={change}>
             <input
               type="text"
               required=""
@@ -24,7 +25,7 @@ const Name = ({ name, setName, setNumber }) => {
               value={name}
               onChange={(e) => setName(e.target.value)}
             />
-            <button type="button" onClick={() => change()}>
+            <button type="submit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-8 w-12 cursor-pointer transition-all mt-4 sm:mt-0 hover:ml-1 duration-200 ease-linear"

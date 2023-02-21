@@ -7,15 +7,11 @@ const Prompt = ({
   handleSurpriseMe,
   generateImage,
   generatingImg,
+  text,
+  isNumber,
+  setIsNumber
 }) => {
-  const [isNumber, setIsNumber] = React.useState(0);
-  const text = [
-    'Generating Image...',
-    'Give it a min, it should be done',
-    'Hmmm, chill a bit',
-    'Wait for it'
-  ]
-  React.useState(()=>{
+  React.useEffect(()=>{
     const interval = setInterval(()=>{
       setIsNumber((prev)=> prev+1);
     }, 10000);
@@ -36,7 +32,7 @@ const Prompt = ({
           What is your prompt?
         </p>
         <div className="flex flex-col sm:flex-row mt-8 md:mt-16 mb-8 2xl:my-20 items-center">
-          <form className="w-full">
+          <form className="w-full" onSubmit={()=>generateImage()}>
             <input
               type="text"
               required=""
@@ -49,7 +45,7 @@ const Prompt = ({
               <p className="font-poppins mt-2">{text[isNumber]}</p>
             ) : (
               <button
-                type="button"
+                type="submit"
                 title="Generate image"
                 onClick={() => generateImage()}
               >

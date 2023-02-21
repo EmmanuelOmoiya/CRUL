@@ -20,7 +20,7 @@ https://user-images.githubusercontent.com/79797604/219990531-af5d3224-30c3-40d9-
 
 ## Dependencies
 
-The following dependencies must be installed in order form the software to work:
+The following dependencies must be installed in order for the software to work:
 <br/>
     **Frontend (Client folder)**:
         - React

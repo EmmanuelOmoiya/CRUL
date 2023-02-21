@@ -44,6 +44,13 @@ const GenerateImage = () => {
     const randomPrompt = getRandomPrompt(prompt);
     setPrompt(randomPrompt);
   };
+  const [isNumber, setIsNumber] = React.useState(0);
+  const text = [
+    'Generating Image...',
+    'Give it a min, it should be done',
+    'Hmmm, chill a bit',
+    'Wait for it'
+  ]
   const generateImage = async () => {
     if (prompt) {
       try {
@@ -58,16 +65,18 @@ const GenerateImage = () => {
         const data = await response.json();
         setPhoto(`data:image/jpeg;base64,${data.photo}`);
       } catch (error) {
-        alert(error);
+        alert(error?.response.data.error.message);
         console.log(error);
       } finally {
         setNumber(3);
         setGeneratingImg(false);
+        setIsNumber(0);
       }
     } else {
       alert("Please enter a prompt");
     }
   };
+  
 
   // const [jokes, setJokes] = React.useState([]);
   // React.useEffect(()=>{
@@ -147,6 +156,9 @@ const GenerateImage = () => {
           handleSurpriseMe={handleSurpriseMe}
           generatingImg={generatingImg}
           generateImage={generateImage}
+          text={text}
+          isNumber={isNumber}
+          setIsNumber={setIsNumber}
         />
       )}
       {number === 3 && (
