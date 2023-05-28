@@ -42,7 +42,7 @@ const Prompt = ({
               onChange={(e) => setPrompt(e.target.value)}
             />
             {generatingImg ? (
-              <p className="font-poppins mt-2">{text[isNumber]}</p>
+              <p className="font-poppins mt-2">{text.length === isNumber ? "Dont fret it's on the way" : text[isNumber]}</p>
             ) : (
               <button
                 type="submit"
