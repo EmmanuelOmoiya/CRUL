@@ -21,7 +21,7 @@ app.get('/',(req, res)=>{
 // Start server
 const startServer = async () => {
   try {
-    connectDB(process.env.MONGODB_URL);
+    connectDB();
     app.listen(4090, () =>
       console.log("Server has started on https://crul.onrender.com")
     );
