@@ -39,6 +39,7 @@ const Prompt = ({
               className="border-b-2 placeholder:font-poppins py-2 border-green font-poppins bg-transparent w-full sm:w-11/12 md:w-10/12 lg:w-8/12 text-xl sm:text-3xl md:text-xl lg:text-2xl 2xl:text-3xl outline-none focus:border-green_opaque focus:border-b-4 inline"
               placeholder="Enter your prompt"
               value={prompt}
+              disabled={generatingImg ? false : true}
               onChange={(e) => setPrompt(e.target.value)}
             />
             {generatingImg ? (
