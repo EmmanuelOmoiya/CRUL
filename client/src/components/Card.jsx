@@ -13,6 +13,7 @@ const Card = ({ _id, name, prompt, photo }) => {
   }
 
   const lowQualitySrc = add30(photo, "q_30");
+  console.log(lowQualitySrc)
   const highQualitySrc = add30(photo, "q_80");
   const shareImage = async (title, url) => {
     setSharing(true);
@@ -30,7 +31,7 @@ const Card = ({ _id, name, prompt, photo }) => {
     <div className="rounded-xl group relative shadow-card hover:shadow-cardhover card cursor-pointer">
       <Link to={`/showcase/${_id}`}>
         <img
-          src={src}
+          src={photo}
           alt={prompt}
           style={{
             filter: blur ? "blur(20px)": "none",
