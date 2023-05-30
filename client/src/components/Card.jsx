@@ -25,12 +25,12 @@ const Card = ({ _id, name, prompt, photo }) => {
       .catch((error) => console.error("Error sharing Image: ", error))
       .finally(setSharing(false));
   };
-  const [photo, { blur }] = useProgressiveImg(lowQualitySrc, highQualitySrc);
+  const [src, { blur }] = useProgressiveImg(lowQualitySrc, highQualitySrc);
   return (
     <div className="rounded-xl group relative shadow-card hover:shadow-cardhover card cursor-pointer">
       <Link to={`/showcase/${_id}`}>
         <img
-          src={photo}
+          src={src}
           alt={prompt}
           style={{
             filter: blur ? "blur(20px)": "none",
