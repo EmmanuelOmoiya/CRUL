@@ -3,8 +3,17 @@ import { AiOutlineShareAlt } from "react-icons/ai";
 import { BsDownload } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { downloadImage } from "../utils";
+import useProgressiveImg from "../hooks/useProgressiveImg";
 
 const Card = ({ _id, name, prompt, photo }) => {
+  const add30 = (src, add) =>{
+    const parts = src.split("/upload/");
+    const modifiedTexts = parts[0] + "/upload/" + add  + "/" + parts[1];
+    return modifiedTexts;
+  }
+
+  const lowQualitySrc = add30(photo, "q_30");
+  const highQualitySrc = add30(photo, "q_80");
   const shareImage = async (title, url) => {
     setSharing(true);
     navigator
@@ -16,12 +25,17 @@ const Card = ({ _id, name, prompt, photo }) => {
       .catch((error) => console.error("Error sharing Image: ", error))
       .finally(setSharing(false));
   };
+  const [photo, { blur }] = useProgressiveImg(lowQualitySrc, highQualitySrc);
   return (
     <div className="rounded-xl group relative shadow-card hover:shadow-cardhover card cursor-pointer">
       <Link to={`/showcase/${_id}`}>
         <img
           src={photo}
           alt={prompt}
+          style={{
+            filter: blur ? "blur(20px)": "none",
+            transition: blur ? "none" : "filter 0.3s ease-out"
+          }}
           className="w-full h-auto object-cover rounded-xl"
         />
         <div className="group-hover:flex flex-col hidden absolute bottom-0 left-0 right-0 bg-dark_navy p-6 h-full  rounded-md">
